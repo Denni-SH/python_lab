@@ -1,0 +1,16 @@
+
+<!--{% block content %}-->
+
+<h1 class="cover-heading">{{ title }}</h1>
+    <p class='lead'></p>
+<p class="lead">
+     <div class='col-sm-6 col-sm-offset-3'>
+                <form method='POST' action='. ' > {% csrf_token %}
+                    {{ form.as_p }}
+                    <input class='btn btn-primary' type='submit' value='Shorten URL' >
+                </form>
+            </div>
+</p>
+
+
+<!--{% endblock content %}-->
