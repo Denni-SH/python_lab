@@ -1,0 +1,31 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+    <form class="post-form">
+        <h1><u>{{ book.title }}</u></h1>
+        <br>
+        <p> 
+            <label >
+                <u>Author</u>: {{ book.authors }}
+            </label>
+        </p>
+        <p> 
+            <label >
+                <u>Description</u>: {{ book.description|linebreaksbr }}
+            </label>
+        </p>
+        <p> 
+            <label >
+                <u>Year</u>: {{ book.year }}
+            </label>
+        </p>
+        <p> 
+            <label >
+                <u>Category</u>: {{ book.category }}
+            </label>
+        </p>
+    </form>
+    <br>
+    <p><a href="/">&lt;&lt;<u>Back</u></a></p>
+{% endblock %}

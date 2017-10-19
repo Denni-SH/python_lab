@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+	<div class="book">	
+		<h1><u>My bookshelf</u></h1>
+		<ul>
+			{%for book in books%}
+				<li><h2><a href="{% url 'book_details' pk=book.title %}">{{book.title}}</a></h2></li>
+				<p>&nbsp;&nbsp;&nbsp;by {{book.authors}}</p>
+				<hr>
+			{%endfor%}	
+		</ul>
+	</div>
+{% endblock %}
+
